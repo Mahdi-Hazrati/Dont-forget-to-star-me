@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Don't forget to star me !",
+    "description": "This extension helps you automatically star the GitHub repos you see.",
+    "version": "1.0.1",
+    "icons": {
+      "16": "./assets/icons/dfstmgce-icon-16.png",
+      "32": "./assets/icons/dfstmgce-icon-32.png",
+      "48": "./assets/icons/dfstmgce-icon-64.png",
+      "128": "./assets/icons/dfstmgce-icon-128.png"
+    },
+    "content_scripts": [
+      {
+        "js": [
+          "./scripts/content.js"
+        ],
+        "matches": [
+          "https://github.com/*"
+        ]
+      }
+    ]
+  }
